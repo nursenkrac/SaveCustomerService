@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Core.ExceptionHandling.Derived.Business" Version="1.0.1" />
+    <PackageReference Include="Core.Operation.Derived.BusinessOperation" Version="1.0.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaveCustomerService.Model.DtoModel\SaveCustomerService.Model.DtoModel.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.ViewModel\SaveCustomerService.Model.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="User\" />
+  </ItemGroup>
+
+</Project>

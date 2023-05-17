@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="5.1.2" />
+    <PackageReference Include="Core.Data.Derived.EntityFramework" Version="1.1.4" />
+    <PackageReference Include="Core.Data.Model.Infrastructure" Version="1.0.6" />
+    <PackageReference Include="Core.Data.Repository.Infrastructure" Version="1.0.2" />
+    <PackageReference Include="Core.DtoModel.Infrastructure" Version="1.0.7" />
+    <PackageReference Include="Core.Encryption.Derived.SHA256" Version="1.0.2" />
+    <PackageReference Include="Core.Encryption.Infrastructure" Version="1.0.1" />
+    <PackageReference Include="Core.ExceptionHandling.Derived.Business" Version="1.0.1" />
+    <PackageReference Include="Core.ExceptionHandling.Derived.Data" Version="1.0.1" />
+    <PackageReference Include="Core.Mapper.Derived.MyMapster" Version="1.0.4" />
+    <PackageReference Include="Core.Mapper.Infrastructure" Version="1.0.4" />
+    <PackageReference Include="Core.Model.Infrastructure" Version="1.2.7" />
+    <PackageReference Include="Core.Operation.Derived.BusinessOperation" Version="1.0.0" />
+    <PackageReference Include="Core.Operation.Derived.DataOperation" Version="1.0.0" />
+    <PackageReference Include="Core.Operation.Manager" Version="1.1.4" />
+    <PackageReference Include="Core.Presentation.Api" Version="1.1.5" />
+    <PackageReference Include="Core.Presentation.Infrastructure" Version="1.0.3" />
+    <PackageReference Include="Core.Serializer.Derived.Newtonsoft" Version="1.0.3" />
+    <PackageReference Include="Core.Serializer.Infrastructure" Version="1.0.4" />
+    <PackageReference Include="Core.Validation.Infrastucture" Version="1.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.30.1" />
+    <PackageReference Include="System.DirectoryServices" Version="8.0.0-preview.4.23259.5" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaveCustomer.Core.Utility\SaveCustomer.Core.Utility.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Core.Api\SaveCustomerService.Core.Api.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Core.Dependency\SaveCustomerService.Core.Dependency.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Core.Infrastructure\SaveCustomerService.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Data Model\SaveCustomerService.Data.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Data.Repository.Derived.EFSQL\SaveCustomerService.Data.Repository.Derived.EFSQL.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Mapper.Infrastructure\SaveCustomerService.Mapper.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.DtoModel\SaveCustomerService.Model.DtoModel.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.ServiceModel\SaveCustomerService.Model.ServiceModel.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.ViewModel\SaveCustomerService.Model.ViewModel.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Operation.BusinessOperation\SaveCustomerService.Operation.BusinessOperation.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Operation.ServiceOperation\SaveCustomerService.Operation.ServiceOperation.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.30.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaveCustomerService.Core.Infrastructure\SaveCustomerService.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Encryption.Derived\SaveCustomerService.Encryption.Derived.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Encryption.Infrastructure\SaveCustomerService.Encryption.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.DtoModel\SaveCustomerService.Model.DtoModel.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.ViewModel\SaveCustomerService.Model.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

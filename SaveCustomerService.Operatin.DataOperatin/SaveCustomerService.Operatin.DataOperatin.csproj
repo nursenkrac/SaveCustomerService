@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Core.Data.Repository.Infrastructure" Version="1.0.2" />
+    <PackageReference Include="Core.ExceptionHandling.Derived.Data" Version="1.0.1" />
+    <PackageReference Include="Core.Operation.Derived.DataOperation" Version="1.0.5" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaveCustomerService.Core.Infrastructure\SaveCustomerService.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Data Model\SaveCustomerService.Data.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

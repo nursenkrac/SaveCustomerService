@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.7.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.7.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.7.*" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.7.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaveCustomerService.Core.Api\SaveCustomerService.Core.Api.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Core.Dependency\SaveCustomerService.Core.Dependency.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Core.Infrastructure\SaveCustomerService.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Data Model\SaveCustomerService.Data.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Data.Repository.Derived.EFSQL\SaveCustomerService.Data.Repository.Derived.EFSQL.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.DtoModel\SaveCustomerService.Model.DtoModel.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.ServiceModel\SaveCustomerService.Model.ServiceModel.csproj" />
+    <ProjectReference Include="..\SaveCustomerService.Model.ViewModel\SaveCustomerService.Model.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>
